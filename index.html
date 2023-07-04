@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WEATHER APP</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Weather App</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Most Viewed Cities
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Delhi</a></li>
+							<li><a class="dropdown-item" href="#">Jaipur</a></li>
+							<!-- <li>
+								<hr class="dropdown-divider">
+							</li> -->
+							<li><a class="dropdown-item" href="#">Ajmer</a></li>
+
+
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About this app</a>
+					</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<main role="main">
+
+		<!-- Main jumbotron for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1 class="my-9 text-center">Weather for <span id = "cityName"></span>!</h1>
+				<!-- <p>This is a template for a simple marketing or informational website. It includes a large callout
+					called a jumbotron and three supporting pieces of content. Use it as a starting point to create
+					something more unique.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Temperature</h2>
+					<ul class="list-unstyled mt-3 mb-3">
+						<li>Temperature is <span id = "temp"></span></li>
+						<li>Max temp is <span id = "max_temp"></span></li>
+						<li>Min temp is <span id = "min_temp"></span></li>
+						<li>Feels like is <span id = "feels_like"></span> </li>
+					</ul>
+
+				</div>
+				<div class="col-md-4">
+					<h2>Humidity</h2>
+						<li>Humidity is <span id = "humidity"></span></li>
+						<li>Cloud pct is <span id = "cloud_pct"></span></li>
+				</div>
+				<div class="col-md-4">
+					<h2>Wind Speed </h2>
+						<li>wind degrees is <span id = "wind_degrees"></span></li>
+						<li>wind speed is <span id = "wind_speed"></span></li>
+				</div>
+			</div>
+
+			<hr>
+
+		</div> <!-- /container -->
+
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
